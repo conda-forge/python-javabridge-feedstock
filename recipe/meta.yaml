@@ -11,7 +11,7 @@ source:
   sha256: 9fd9c85e6a32f4edd9fff659d387cbf4c1c91fde9fe3670e4f6d37d79eb6200f
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
 
@@ -29,6 +29,8 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - openjdk
+  run_constrained:
+    - javabridge ==9999999999
 
 test:
   imports:
