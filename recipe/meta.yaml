@@ -1,5 +1,5 @@
 {% set name = "python-javabridge" %}
-{% set version = "4.0.0" %}
+{% set version = "4.0.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python-javabridge-{{ version }}.tar.gz
-  sha256: 9fd9c85e6a32f4edd9fff659d387cbf4c1c91fde9fe3670e4f6d37d79eb6200f
+  sha256: 27ab04b2ae0e5f44d07854e9103dd125374d1cd9f797a2073284670de1027124
 
 build:
-  number: 3
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
 
