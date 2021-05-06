@@ -22,11 +22,11 @@ requirements:
     - cython >=0.29.16
     - numpy >=1.20.1
     - pip
-    - python >=3.8
+    - python
     - openjdk
   run:
     - numpy >=1.20.1
-    - python >=3.8
+    - python
     - {{ pin_compatible('numpy') }}
     - openjdk
   run_constrained:
