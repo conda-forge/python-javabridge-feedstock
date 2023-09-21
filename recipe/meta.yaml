@@ -19,14 +19,14 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
-    - cython >=0.29.16
+    - cython >=0.29.16,<3
     - numpy  >=1.20.1
     - pip
-    - python  >3.6
+    - python
     - openjdk
   run:
     - numpy  >=1.20.1
-    - python  >3.6
+    - python
     - {{ pin_compatible('numpy') }}
     - openjdk
   run_constrained:
